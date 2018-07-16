@@ -8,21 +8,21 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ESFA.DC.CollectionsManagement.WebApi.Controllers
 {
-    [Route("api/org")]
-    public class OrganisationController : Controller
+    [Route("api/collections")]
+    public class CollectionController : Controller
     {
         private readonly IOrganisationService _organisationService;
 
-        public OrganisationController(IOrganisationService organisationService)
+        public CollectionController(IOrganisationService organisationService)
         {
             _organisationService = organisationService;
         }
 
         // GET api/values/5
-        [HttpGet("{ukprn}")]
-        public IEnumerable<CollectionType> Get(long ukprn)
+        [HttpGet("{ukprn}/{collectionType}")]
+        public IEnumerable<Collection> Get(long ukprn, string collectionType)
         {
-           return _organisationService.GetAvailableCollectionTypes(ukprn);
+            return _organisationService.GetAvailableCollections(ukprn, collectionType);
         }
     }
 }

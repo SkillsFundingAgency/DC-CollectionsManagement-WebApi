@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ESFA.DC.CollectionsManagement.Interfaces;
 using ESFA.DC.CollectionsManagement.Models;
-using ESFA.DC.CollectionsManagement.Service;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ESFA.DC.CollectionsManagement.WebApi.Controllers
@@ -19,10 +19,10 @@ namespace ESFA.DC.CollectionsManagement.WebApi.Controllers
         }
 
         // GET api/values/5
-        [HttpGet("{type}")]
-        public IEnumerable<ReturnCalendar> Get(CollectionTypes type)
+        [HttpGet("{collectionName}")]
+        public ReturnPeriod Get(string collectionName)
         {
-            return _retrunCalendarService.GetCurrent(type);
+            return _retrunCalendarService.GetCurrentPeriod(collectionName);
         }
     }
 }

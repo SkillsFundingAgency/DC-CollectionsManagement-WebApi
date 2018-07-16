@@ -10,5 +10,8 @@ namespace ESFA.DC.CollectionsManagement.WebApi.Settings
     {
         [JsonRequired]
         public string AppLogs { get; set; }
+
+        [JsonRequired]
+        public string CollectionsManagement { get; set; }
     }
 }
