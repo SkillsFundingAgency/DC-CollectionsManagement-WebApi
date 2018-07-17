@@ -22,7 +22,7 @@ namespace ESFA.DC.CollectionsManagement.WebApi.Controllers
         [HttpGet("{ukprn}")]
         public IEnumerable<CollectionType> Get(long ukprn)
         {
-           return _organisationService.GetAvailableCollectionTypes(ukprn);
+            return _organisationService.GetAvailableCollectionTypes(ukprn);
         }
     }
 }

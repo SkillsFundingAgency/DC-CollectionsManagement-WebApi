@@ -20,10 +20,9 @@
     <PackageReference Include="Autofac" Version="4.8.1" />
     <PackageReference Include="Autofac.Configuration" Version="4.1.0" />
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.2.2" />
-    <PackageReference Include="ESFA.DC.CollectionsManagement.Data" Version="1.0.0" />
-    <PackageReference Include="ESFA.DC.CollectionsManagement.Interfaces" Version="1.0.0" />
-    <PackageReference Include="ESFA.DC.CollectionsManagement.Models" Version="1.0.0" />
-    <PackageReference Include="ESFA.DC.CollectionsManagement.Services" Version="1.0.6" />
+    <PackageReference Include="ESFA.DC.CollectionsManagement.Interfaces" Version="0.1.0-beta0001" />
+    <PackageReference Include="ESFA.DC.CollectionsManagement.Models" Version="0.1.4-beta0001" />
+    <PackageReference Include="ESFA.DC.CollectionsManagement.Services" Version="0.1.0-beta0001" />
     <PackageReference Include="ESFA.DC.DateTime.Provider" Version="0.1.4-beta0001" />
     <PackageReference Include="ESFA.DC.DateTime.Provider.Interface" Version="0.1.4-beta0001" />
     <PackageReference Include="ESFA.DC.Logging" Version="0.1.1-beta0001" />
