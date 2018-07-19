@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using Autofac;
-using ESFA.DC.CollectionsManagement.Interfaces;
 using ESFA.DC.CollectionsManagement.Services;
+using ESFA.DC.CollectionsManagement.Services.Interface;
 using ESFA.DC.CollectionsManagement.WebApi.Settings;
 using ESFA.DC.DateTime.Provider;
 using ESFA.DC.DateTime.Provider.Interface;
@@ -15,7 +15,7 @@ namespace ESFA.DC.CollectionsManagement.WebApi.Ioc
     {
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterType<RetrunCalendarService>().As<IRetrunCalendarService>().InstancePerLifetimeScope();
+            builder.RegisterType<ReturnCalendarService>().As<IReturnCalendarService>().InstancePerLifetimeScope();
             builder.RegisterType<OrganisationService>().As<IOrganisationService>().InstancePerLifetimeScope();
             builder.RegisterType<DateTimeProvider>().As<IDateTimeProvider>().InstancePerLifetimeScope();
 

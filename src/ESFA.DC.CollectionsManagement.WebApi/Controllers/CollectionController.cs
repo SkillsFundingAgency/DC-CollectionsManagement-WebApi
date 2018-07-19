@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using ESFA.DC.CollectionsManagement.Interfaces;
 using ESFA.DC.CollectionsManagement.Models;
+using ESFA.DC.CollectionsManagement.Services.Interface;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ESFA.DC.CollectionsManagement.WebApi.Controllers
