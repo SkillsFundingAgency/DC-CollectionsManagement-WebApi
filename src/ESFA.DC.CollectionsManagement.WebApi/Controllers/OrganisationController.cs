@@ -20,9 +20,9 @@ namespace ESFA.DC.CollectionsManagement.WebApi.Controllers
 
         // GET api/values/5
         [HttpGet("{ukprn}")]
-        public IEnumerable<CollectionType> Get(long ukprn)
+        public async Task<IEnumerable<CollectionType>> Get(long ukprn)
         {
-            return _organisationService.GetAvailableCollectionTypes(ukprn);
+            return await _organisationService.GetAvailableCollectionTypesAsync(ukprn);
         }
     }
 }
