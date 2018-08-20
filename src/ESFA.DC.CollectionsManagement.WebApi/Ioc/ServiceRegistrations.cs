@@ -4,10 +4,8 @@ using Autofac;
 using ESFA.DC.CollectionsManagement.Services;
 using ESFA.DC.CollectionsManagement.Services.Interface;
 using ESFA.DC.CollectionsManagement.WebApi.Settings;
-using ESFA.DC.DateTime.Provider;
-using ESFA.DC.DateTime.Provider.Interface;
+using ESFA.DC.DateTimeProvider.Interface;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
 
 namespace ESFA.DC.CollectionsManagement.WebApi.Ioc
 {
@@ -17,7 +15,7 @@ namespace ESFA.DC.CollectionsManagement.WebApi.Ioc
         {
             builder.RegisterType<ReturnCalendarService>().As<IReturnCalendarService>().InstancePerLifetimeScope();
             builder.RegisterType<OrganisationService>().As<IOrganisationService>().InstancePerLifetimeScope();
-            builder.RegisterType<DateTimeProvider>().As<IDateTimeProvider>().InstancePerLifetimeScope();
+            builder.RegisterType<DateTimeProvider.DateTimeProvider>().As<IDateTimeProvider>().InstancePerLifetimeScope();
 
             builder.Register(context =>
                 {
