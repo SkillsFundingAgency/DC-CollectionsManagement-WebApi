@@ -22,7 +22,7 @@ namespace ESFA.DC.CollectionsManagement.WebApi.Controllers
         [HttpGet("{collectionName}/current")]
         public async Task<ReturnPeriod> GetCurrent(string collectionName)
         {
-            return await _retrunCalendarService.GetCurrentPeriodAsync(collectionName);
+             return await _retrunCalendarService.GetCurrentPeriodAsync(collectionName);
         }
 
         // GET api/values/5
